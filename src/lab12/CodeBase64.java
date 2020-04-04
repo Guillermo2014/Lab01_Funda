@@ -11,7 +11,7 @@ import java.util.Base64;
 public class CodeBase64 {
 	
 	public static void main(String[] args) throws IOException {
-		Path originalPath = Paths.get("C:\\Users\\GUILLERMO\\Documents\\workspace-spring-tool-suite-4-4.6.0.RELEASE\\Lab12", "CERTIFICADO1.pdf");
+		Path originalPath = Paths.get("C:\\Users\\GUILLERMO\\Documents\\workspace-spring-tool-suite-4-4.6.0.RELEASE\\Lab12", "Proyecto1.pdf");
 		Path targetPath = Paths.get("C:\\Users\\GUILLERMO\\Documents\\workspace-spring-tool-suite-4-4.6.0.RELEASE\\Lab12", "encoded.txt");
 		Base64.Encoder mimeEncoder = Base64.getMimeEncoder();
 		try(OutputStream output = Files.newOutputStream(targetPath)){
